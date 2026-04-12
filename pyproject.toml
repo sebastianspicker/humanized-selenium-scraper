@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Human-like Google searching and subpage BFS via Selenium."
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = ["selenium>=4.10"]
+dependencies = ["selenium>=4.43.0"]
 
 [project.optional-dependencies]
 dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.8", "bandit>=1.7", "pip-audit>=2.7"]
