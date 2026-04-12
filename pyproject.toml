@@ -11,7 +11,7 @@ requires-python = ">=3.12"
 dependencies = ["selenium>=4.10"]
 
 [project.optional-dependencies]
-dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.8", "bandit>=1.7", "pip-audit>=2.7"]
+dev = ["pytest>=8", "ruff>=0.6", "mypy>=1.20.0", "bandit>=1.7", "pip-audit>=2.7"]
 
 [tool.ruff]
 line-length = 100
