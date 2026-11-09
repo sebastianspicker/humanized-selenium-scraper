@@ -1,5 +1,28 @@
 # HumanizedSeleniumScraper
 
+
+
+A small, **dataset-agnostic** demonstration scraper. You bring any CSV dataset and
+tell the tool which columns to use; for each row it searches, visits the most
+relevant result, and writes the website, phone, and email it finds back to a new
+CSV. Nothing about the input schema is hard-coded: with the default `generic`
+preset the search query is built from every value in the row, and you can override
+that with a template (or the `contact` preset) whenever you want.
+
+<details>
+<summary>Status and limitations</summary>
+
+**Project status: archived educational proof of concept.** I developed this
+browser-automation example independently alongside my main professional work. It is no
+longer actively maintained. Treat it as a teaching example and starting point for
+adaptation, rather than a ready-to-use scraping product. Browser behavior and page
+structure change, so review and test any reuse.
+
+**Disclaimer.** Use only data and sites you are authorized to access, and follow the
+restrictions and detailed disclaimer below. Demonstration code does not establish
+permission to automate a service or collect personal information; responsibility for
+your use remains with you.
+
 > ## ⚠️ Educational demonstration only
 >
 > This project is a **teaching example** of browser automation and HTML parsing.
@@ -8,12 +31,7 @@
 > to scrape Google or any site against its terms. Use it only with data and sites
 > you are authorised to access. See [`DISCLAIMER.md`](DISCLAIMER.md).
 
-A small, **dataset-agnostic** demonstration scraper. You bring any CSV dataset and
-tell the tool which columns to use; for each row it searches, visits the most
-relevant result, and writes the website, phone, and email it finds back to a new
-CSV. Nothing about the input schema is hard-coded: with the default `generic`
-preset the search query is built from every value in the row, and you can override
-that with a template (or the `contact` preset) whenever you want.
+</details>
 
 Under the hood it drives a real Chrome browser with human-like typing, pauses, and scrolling to reduce the chance of being blocked.
 
